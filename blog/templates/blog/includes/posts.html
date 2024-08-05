@@ -1,0 +1,58 @@
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href={% static "blog/posts.css" %} />
+{% endblock %}
+
+{% block content %}
+    <ul>
+      <li class="post">
+        <a href="{% url "post-detail-page" slug="web-scraping" %}">
+          <img src="{% static "blog/images/github.jpeg" %}" alt="Python Repository" />
+          <div class="post__content">
+            <h3>Using Python for Webscraping</h3>
+            <p>Check the repository in Github</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <ul>
+      <li class="post">
+        <a href="{% url "machine-learning" %}">
+          <img src="{% static "blog/images/github.jpeg" %}" alt="Python Repository" />
+          <div class="post__content">
+            <h3>Machine learning NBA points forecast</h3>
+            <p>Check the repository in Github</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <ul>
+      <li class="post">
+        <a href="{% url "crypto" %}">
+          <img src="{% static "blog/images/github.jpeg" %}" alt="Python Repository" />
+          <div class="post__content">
+            <h3>3 ML Algorithms for Bitcoin Forecast</h3>
+            <p>Check the repository in Github</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <ul>
+      <li class="post">
+        <a href="{% url "personal-website" %}">
+          <img src="{% static "blog/images/github.jpeg" %}" alt="Python Repository" />
+          <div class="post__content">
+            <h3>Current Webpage Using Django-HTML-CSS</h3>
+            <p>Check the repository in Github</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+{% endblock %}
+
+

@@ -1,0 +1,35 @@
+{#{% extends "blog/main-page-navigation.html" %}#}
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+
+{% block title %}
+    Seretis Konstantinos
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "main-page.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <div id="background-image"></div>
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/Seretis Photo.jpg" %}" alt="The Author of This Blog" />
+            <div class="intro-text">
+                <h2>Seretis Konstantinos</h2>
+                <p>Hi, I am a big data enthusiast with a strong foundation in mathematics, currently working as a data analyst.
+                My passion lies in uncovering insights from complex data sets and applying analytical techniques to solve real-world problems.</p>
+            </div>
+        </header>
+    </section>
+    <section id="latest-posts">
+        <h2>My Latest Projects</h2>
+        <ul>
+            <li>
+                {% include "blog/includes/posts.html" %}
+            </li>
+        </ul>
+    </section>
+{% endblock %}

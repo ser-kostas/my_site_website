@@ -1,0 +1,23 @@
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+{% block title %}
+    All my Posts
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/posts.css" %}" />
+    <link rel="stylesheet" href="{% static "app.css" %}">
+    <link rel="stylesheet" href="{% static "blog/all-posts.css" %}" />
+{% endblock %}
+
+{% block content %}
+<section>
+    <h2>My Collected Posts</h2>
+    <ul>
+        {% include "blog/includes/posts.html" %}
+    </ul>
+</section>
+{% endblock %}
+

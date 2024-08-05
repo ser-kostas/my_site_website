@@ -1,0 +1,135 @@
+.post{
+  margin-top: 200px;
+}
+
+ul{
+  list-style-type: lower-latin;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.post, .post-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.post a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease;
+  padding: 1rem;
+}
+
+.post a:hover,
+.post a:active {
+  transform: scale(1.1);
+  background-color: #390281;
+  color: white;
+}
+
+.post img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.post h3 {
+  margin: 0.25rem 0;
+}
+
+.post time {
+  color: #666666;
+  margin: 0.25rem;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.post:hover time,
+.post:active time {
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 15rem; /* Adjust width as needed */
+  height: 15rem; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.container .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  color: white;
+}
+
+.container:hover,
+.container:active {
+  background-color: #390281;
+  color: white;
+  transform: scale(1.1);
+}
+
+.container:hover .image,
+.container:active .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle,
+.container:active .middle {
+  opacity: 1;
+}
+
+.container:hover .text,
+.container:active .text {
+  color: white;
+}
+
+.description {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.container .description{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.container .p{
+  color: #3ea10d;
+}

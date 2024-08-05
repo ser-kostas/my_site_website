@@ -1,0 +1,42 @@
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+{% block title %}
+    web scraping
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/second-page-posts.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/button-links.css" %}" />
+
+{% endblock %}
+
+{% block content %}
+    <h2 class="page-header">Web Scraping</h2>
+    <section id="summary">
+        <a href="javascript:history.back()" class="back-arrow"> &larr; Back </a>
+        <h2 class="page-header">Web Scraping</h2>
+        <article>
+            <img src="{% static "blog/images/webscrape.jpeg" %}" alt="Post Title" />
+            <div>
+                <address>By Konstantinos Seretis</address>
+                <div>Last Updated On <time>August 01</time></div>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+           In this project, I developed a Python algorithm designed to scrape historical NBA data from the website
+            Basketball Reference. The algorithm extracts data from three key tables: team standings, player stats per
+            season, and MVP votes, covering all seasons from 1991 to 2020. This project demonstrates the power of web
+            scraping to collect and analyze sports data efficiently, providing valuable insights into NBA history.
+        </p>
+        <div class="github-link">
+            <a href="https://github.com/ser-kostas/Python-Machine-Learning-House-Prices-Prediction">
+                <img src="{% static "blog/images/github.jpeg" %}" alt="GitHub Repository" /> Github Repository
+                <a href="https://github.com/ser-kostas/Python-Machine-Learning-House-Prices-Prediction">
+            </a>
+        </div>
+    </main>
+{% endblock %}

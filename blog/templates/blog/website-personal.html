@@ -1,0 +1,38 @@
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+{% block title %}
+    Machine Learning NBA
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/second-page-posts.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/button-links.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <h2 class="page-header">Personal Website</h2>
+    <section id="summary">
+        <a href="javascript:history.back()" class="back-arrow"> &larr; Back </a>
+        <h2 class="page-header">Personal Website</h2>
+        <article>
+            <img src="{% static "blog/images/django1.jpg" %}" alt="Post Title" />
+            <div>
+                <address>By Konstantinos Seretis</address>
+                <div>Last Updated On <time>August 01</time></div>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+           In this project, I used Django to create the current website.
+        </p>
+        <div class="github-link">
+            <a href="https://github.com/ser-kostas/Python-Machine-Learning-House-Prices-Prediction">
+                <img src="{% static "blog/images/github.jpeg" %}" alt="GitHub Repository" />
+                <a href="https://github.com/ser-kostas/Python-Machine-Learning-House-Prices-Prediction"> Github Repository</a>
+            </a>
+        </div>
+    </main>
+{% endblock %}

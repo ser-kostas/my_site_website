@@ -1,0 +1,48 @@
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+{% block title %}
+    Machine Learning NBA
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/second-page-posts.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/button-links.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <h2 class="page-header">Machine Learning</h2>
+    <section id="summary">
+        <a href="javascript:history.back()" class="back-arrow"> &larr; Back </a>
+        <h2 class="page-header">Machine Learning</h2>
+        <article>
+            <img src="{% static "blog/images/bitcoin.jpeg" %}" alt="Post Title" />
+            <div>
+                <address>By Konstantinos Seretis</address>
+                <div>Last Updated On <time>August 01</time></div>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+           In this project, Using python and machine learning to analyze data regarding Bitcoin for the past 1 years
+            In the current repository we are using yfinance to upload the data of Bitcoin for the past year.
+            The past year is calculated based on todays date.
+            Then we are making some basic data preparation and checks.
+            After that we are running a basic plot to visualise the data.
+            Then we create 3 machine learning models to predict the future prices of the Bitcoin.
+            The first model is a basic model that splits the data of the opening prices into 80-20 and make
+            the predictions. Then we are ploting the differences of the predicted and the actual prices.
+            The Second model uses the moving avg for 7,14,30 days to remove any extremes and then predicts the
+            future values. The Third model uses Fibonacci, it calculates the fibonacci prices for a window of 5 days
+            and then uses the prices to predict the future values of the bitcoin.
+        </p>
+        <div class="github-link">
+            <a href="https://github.com/ser-kostas/crypto_prediction_ML_model">
+                <img src="{% static "blog/images/github.jpeg" %}" alt="GitHub Repository" />
+                <a href="https://github.com/ser-kostas/crypto_prediction_ML_model"> Github Repository</a>
+            </a>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+
+{% block title %}
+    Education
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/education.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/second-general-page.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <h2>Below you can find my degrees and the successfully completed Certifications</h2>
+    <section id="education">
+        <div class="container">
+            <h3>Education </h3>
+            <ul class="education-list">
+                <li>
+                    <h4>Master of Science in Data Science</h4>
+                    <p>IU International University of Applied Sciences in Berlin, 2024-Now</p>
+                </li>
+                <li>
+                    <h4>6 Months Program - Big Data Analytics</h4>
+                    <p>University of Patras, 2023</p>
+                </li>
+                <li>
+                    <h4>Master of Science in Finance</h4>
+                    <p>National and Kapodistrian University of Athens, 2017-2019</p>
+                    <p>Master Thesis: Using Neural Networks to Calculate Leontief Model</p>
+                </li>
+                <li>
+                    <h4>Bachelor of Science in Mathematics</h4>
+                    <p> University of Crete, 2011-2017</p>
+                    <p>Thesis: Optimization Methods and The Binary Model</p>
+                </li>
+            </ul>
+
+            <h3>Certifications</h3>
+            <ul class="certifications-list">
+                <li>
+                    <h4>Data Science in Python: Regression & Forecasting</h4>
+                    <p>Udemy, Mar 2023</p>
+                </li>
+                <li>
+                    <h4>Cutting Edge AI: Deep Reinforcement Learning in Python</h4>
+                    <p>Udemy, Feb 2024</p>
+                </li>
+                <li>
+                    <h4>AZ-900: Microsoft Azure Fundamentals Exam Prep</h4>
+                    <p>Udemy, Oct 2023</p>
+                </li>
+                <li>
+                    <h4>Complete Introduction to Microsoft Power BI</h4>
+                    <p>Udemy, Mar 2023</p>
+                </li>
+                <li>
+                    <h4>The Python Developer Essentials 2023 Immersive Bootcamp</h4>
+                    <p>Udemy, Jun 2023</p>
+                </li>
+                <li>
+                    <h4>Data Structures and Algorithms-Deep Dive Using Java</h4>
+                    <p>Udemy, Feb 2023</p>
+                </li>
+                <li>
+                    <h4>SQL Essential Training</h4>
+                    <p>LinkedIn Learning, May 2022</p>
+                </li>
+                <li>
+                    <h4>Machine Learning with Python: Foundations</h4>
+                    <p>LinkedIn Learning, Dec 2022</p>
+                </li>
+                <li>
+                    <h4>Python for Everybody - 5 certification program</h4>
+                    <p>University of Michigan, Jan 2021</p>
+                </li>
+                <li>
+                    <h4>Google Data Analytics</h4>
+                    <p>Google, Aug 2021</p>
+                </li>
+                <li>
+                    <h4>Neural Network from Scratch in TensorFlow</h4>
+                    <p>Coursera, Nov 2020</p>
+                </li>
+                <li>
+                    <h4>The Data Scientist's Toolbox</h4>
+                    <p>Johns Hopkins University, Nov 2020</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

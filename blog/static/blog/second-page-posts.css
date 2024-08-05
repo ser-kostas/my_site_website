@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Summary Section */
+#summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.back-arrow {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #390281;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.back-arrow:hover {
+    color: #23015f;
+}
+
+.page-header {
+    font-size: 2rem;
+    color: #390281;
+    margin-bottom: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+address {
+    font-style: normal;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+time {
+    font-style: italic;
+    color: #999;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+main p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+main a {
+    text-decoration: none;
+    color: #390281;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+main a:hover {
+    color: #23015f;
+}
+
+/* Button Links */
+.github-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.github-link img:hover {
+    transform: scale(1.1);
+    color: #6a11cb;
+    background-color: #e48900;
+}
+
+.github-link a:hover,
+.github-link a:active {
+    transform: scale(1.05);
+    background-color: #390281;
+    color: #390281;
+}
+
+.github-link img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}

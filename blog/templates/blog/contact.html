@@ -1,0 +1,34 @@
+{% extends "blog/includes/navigation.html" %}
+{% load static %}
+
+
+{% block title %}
+    Contact
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/contact-info.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/second-general-page.css" %}" />
+{% endblock %}
+
+{% block content %}
+    <section id="welcome">
+        <h1>Contact Information </h1>
+    </section>
+
+    <section id="summary">
+        <h3>Connect with me on LinkedIn or GitHub for more information</h3>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/seretiskonstantinos/">
+                <img src="{% static "blog/images/link.png" %}" alt="LinkedIn Profile" /> LinkedIn Profile
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://github.com/ser-kostas">
+                <img src="{% static "blog/images/github.jpeg" %}" alt="GitHub Profile" />
+                Github Profile
+            </a>
+        </div>
+    </section>
+{% endblock %}
